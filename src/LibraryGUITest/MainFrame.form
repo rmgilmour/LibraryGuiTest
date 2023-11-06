@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="LibraryGUITest.MainFrame">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="20" bottom="20" right="20"/>
+    <constraints>
+      <xy x="9" y="0" width="1000" height="1500"/>
+    </constraints>
+    <properties>
+      <autoscrolls value="false"/>
+      <background color="-1118482"/>
+      <font name="Bookman Old Style" size="14" style="0"/>
+      <minimumSize width="-1" height="-1"/>
+      <preferredSize width="-1" height="1500"/>
+    </properties>
+    <border type="etched">
+      <font/>
+      <title-color color="-1118482"/>
+    </border>
+    <children>
+      <grid id="6e7b0" binding="titlePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="5" left="10" bottom="5" right="10"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="28b4b" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="497" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-13939587"/>
+              <font name="Bookman Old Style" size="20" style="1"/>
+              <text value="Welcome to the Library!"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="980ef" layout-manager="GridLayoutManager" row-count="1" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="5" left="10" bottom="5" right="10"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="a65e8" class="javax.swing.JLabel" binding="selectFile">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="40"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="JetBrains Mono" size="14" style="1"/>
+              <text value="Select a file to open: "/>
+            </properties>
+          </component>
+          <component id="4cd3a" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="40"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="JetBrains Mono" size="14" style="1"/>
+              <text value="File Selected: "/>
+            </properties>
+          </component>
+          <component id="e182f" class="javax.swing.JTextField" binding="tfFileResult">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="30"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+              <font name="JetBrains Mono" size="14" style="1"/>
+              <horizontalAlignment value="0"/>
+            </properties>
+          </component>
+          <hspacer id="d1fd5">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <hspacer id="75d8b">
+            <constraints>
+              <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+          <component id="1d04f" class="javax.swing.JButton" binding="btnSelectFile">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Select a File"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="c3d4d" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="5" left="10" bottom="5" right="10"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <tabbedpane id="76488" binding="tabbedPane1" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="200" height="200"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="JetBrains Mono" size="16" style="1"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="1ba5" binding="listPanel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="30" left="50" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="List Items"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="a5832" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="JetBrains Mono" size="16" style="1"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="2"/>
+                      <text value="List all items"/>
+                    </properties>
+                  </component>
+                  <component id="a2e7c" class="javax.swing.JButton" binding="btnList">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="JetBrains Mono" size="14" style="1"/>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="0"/>
+                      <text value="    Go    "/>
+                    </properties>
+                  </component>
+                  <hspacer id="ffc16">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <vspacer id="a3171">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </vspacer>
+                </children>
+              </grid>
+              <grid id="e4ea9" binding="addPanel" layout-manager="GridLayoutManager" row-count="3" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="1" vgap="1">
+                <margin top="15" left="10" bottom="15" right="25"/>
+                <constraints>
+                  <tabbedpane title="Add an Item">
+                    <tooltip value="Complete all fields before clicking Submit."/>
+                  </tabbedpane>
+                </constraints>
+                <properties>
+                  <alignmentX value="0.0"/>
+                  <alignmentY value="0.0"/>
+                  <minimumSize width="700" height="50"/>
+                  <opaque value="true"/>
+                  <preferredSize width="-1" height="-1"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="1b6a9" class="javax.swing.JLabel" binding="addIdLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="4" fill="0" indent="1" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="JetBrains Mono" size="14" style="1"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="ID: "/>
+                    </properties>
+                  </component>
+                  <component id="df08a" class="javax.swing.JTextField" binding="tfAddID">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font size="14"/>
+                      <horizontalAlignment value="10"/>
+                      <margin top="3" left="8" bottom="3" right="8"/>
+                    </properties>
+                  </component>
+                  <component id="6a1fa" class="javax.swing.JLabel" binding="addTitleLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="JetBrains Mono" size="14" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <text value="Title: "/>
+                    </properties>
+                  </component>
+                  <component id="2d70a" class="javax.swing.JTextField" binding="tfAddTitle">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="360" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font size="14"/>
+                      <horizontalAlignment value="2"/>
+                      <margin top="3" left="8" bottom="3" right="8"/>
+                    </properties>
+                  </component>
+                  <component id="db1fa" class="javax.swing.JLabel" binding="addStatusLabel">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="4" fill="0" indent="1" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="JetBrains Mono" size="14" style="1"/>
+                      <horizontalAlignment value="2"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="Status: "/>
+                    </properties>
+                  </component>
+                  <component id="4f703" class="javax.swing.JTextField" binding="tfAddStatus">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="125" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font size="14"/>
+                      <margin top="3" left="8" bottom="3" right="8"/>
+                      <toolTipText value="If not checked out, enter: In"/>
+                    </properties>
+                  </component>
+                  <component id="dcc88" class="javax.swing.JLabel" binding="addDateLabel">
+                    <constraints>
+                      <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="JetBrains Mono" size="14" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <text value="Due Date: "/>
+                    </properties>
+                  </component>
+                  <component id="12cf9" class="javax.swing.JTextField" binding="tfAddDate">
+                    <constraints>
+                      <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font size="14"/>
+                      <horizontalAlignment value="10"/>
+                      <margin top="3" left="8" bottom="3" right="8"/>
+                      <toolTipText value="If no date, enter: null"/>
+                    </properties>
+                  </component>
+                  <component id="3f507" class="javax.swing.JLabel" binding="addAuthorLabel">
+                    <constraints>
+                      <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentX value="0.5"/>
+                      <font name="JetBrains Mono" size="14" style="1"/>
+                      <horizontalAlignment value="4"/>
+                      <horizontalTextPosition value="4"/>
+                      <text value="Author: "/>
+                    </properties>
+                  </component>
+                  <component id="a37f6" class="javax.swing.JTextField" binding="tfAddAuthor">
+                    <constraints>
+                      <grid row="1" column="5" row-span="1" col-span="2" vsize-policy="0" hsize-policy="7" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="200" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="JetBrains Mono" size="14" style="0"/>
+                      <horizontalAlignment value="2"/>
+                      <margin top="3" left="8" bottom="3" right="8"/>
+                    </properties>
+                  </component>
+                  <component id="a901b" class="javax.swing.JButton" binding="btnAddSubmit">
+                    <constraints>
+                      <grid row="2" column="3" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentX value="0.5"/>
+                      <font name="JetBrains Mono" size="14" style="1"/>
+                      <horizontalTextPosition value="0"/>
+                      <margin top="0" left="15" bottom="0" right="15"/>
+                      <text value="Submit"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="c6e9e" binding="deletePanel" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="10" left="10" bottom="10" right="10"/>
+                <constraints>
+                  <tabbedpane title="Delete an Item"/>
+                </constraints>
+                <properties>
+                  <preferredSize width="1" height="50"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="b8f01" class="javax.swing.JLabel" binding="deleteIdLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.5"/>
+                      <font name="JetBrains Mono" size="14" style="1"/>
+                      <text value="Delete an item by ID:"/>
+                    </properties>
+                  </component>
+                  <component id="5cc4a" class="javax.swing.JLabel" binding="deleteTitleLabel">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentY value="0.5"/>
+                      <font name="JetBrains Mono" size="14" style="1"/>
+                      <text value="Delete an item by title: "/>
+                    </properties>
+                  </component>
+                  <component id="3ad33" class="javax.swing.JTextField" binding="tfDeleteID">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font size="14"/>
+                      <margin top="3" left="8" bottom="3" right="8"/>
+                    </properties>
+                  </component>
+                  <component id="8c364" class="javax.swing.JTextField" binding="tfDeleteTitle">
+                    <constraints>
+                      <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font size="14"/>
+                      <margin top="3" left="8" bottom="3" right="8"/>
+                    </properties>
+                  </component>
+                  <hspacer id="9a41b">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <hspacer id="5874c">
+                    <constraints>
+                      <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="d8f68" class="javax.swing.JButton" binding="btnDeleteItem">
+                    <constraints>
+                      <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentX value="0.5"/>
+                      <font name="JetBrains Mono" size="14" style="1"/>
+                      <label value="Delete item"/>
+                      <margin top="0" left="20" bottom="0" right="20"/>
+                      <text value="Delete item"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="33d64" binding="outPanel" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="30" left="50" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Check Out"/>
+                </constraints>
+                <properties>
+                  <font size="14"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="e0497" class="javax.swing.JLabel" binding="outBarcodeLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="JetBrains Mono" size="14" style="1"/>
+                      <text value="Enter barcode to check out: "/>
+                    </properties>
+                  </component>
+                  <component id="63d17" class="javax.swing.JTextField" binding="tfBarcode">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font size="14"/>
+                      <margin top="3" left="8" bottom="3" right="8"/>
+                    </properties>
+                  </component>
+                  <component id="f93d3" class="javax.swing.JButton" binding="btnCheckOut">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="JetBrains Mono" size="14" style="1"/>
+                      <text value="Check Out"/>
+                    </properties>
+                  </component>
+                  <hspacer id="963c7">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                  <vspacer id="9452c">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </vspacer>
+                </children>
+              </grid>
+              <grid id="1e4db" binding="inPanel" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="30" left="50" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Check In"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="1f776" class="javax.swing.JLabel" binding="checkInLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <alignmentX value="0.5"/>
+                      <font name="JetBrains Mono" size="14" style="1"/>
+                      <text value="Enter the barcode to check in: "/>
+                      <verticalAlignment value="3"/>
+                    </properties>
+                  </component>
+                  <vspacer id="83e32">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </vspacer>
+                  <component id="b2562" class="javax.swing.JTextField" binding="tfCheckIn">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="7" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font size="14"/>
+                      <margin top="3" left="8" bottom="3" right="8"/>
+                    </properties>
+                  </component>
+                  <component id="819c6" class="javax.swing.JButton" binding="btnCheckIn">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font name="JetBrains Mono" size="14" style="1"/>
+                      <text value="Check In"/>
+                    </properties>
+                  </component>
+                  <hspacer id="d797a">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </hspacer>
+                </children>
+              </grid>
+            </children>
+          </tabbedpane>
+          <component id="f3eae" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="JetBrains Mono" size="14" style="0"/>
+              <margin top="3" left="8" bottom="3" right="8"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="60dbf" binding="tablePanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="5" left="10" bottom="5" right="10"/>
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <scrollpane id="f02d2">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="799bd" class="javax.swing.JTable" binding="tableList">
+                <constraints/>
+                <properties>
+                  <cellSelectionEnabled value="true"/>
+                  <preferredScrollableViewportSize width="1" height="1"/>
+                  <rowHeight value="30"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
